@@ -1,0 +1,333 @@
+*{ 
+  font-family: "Montserrat", sans-serif;
+  margin: 0; /* to remove extra space */
+  color: white; /*  fotr text color */
+  overflow: hidden;/* ese kya benifit mila is ki humne sabko over flow hidde kardiya ab hum aage chlke jise scroll karna ho uspe overflow ki new property laga ke srocll krwa denge baaki nahi hoga particular what ever we want vo hi hoga */
+}
+.main{
+    display: flex; /* flexbox*/
+    height: 100vh; /* complete viewport height dedi mailab browser ki puri height dedi */
+    background-color: black;
+}
+.sidebar{
+    background-color: black;
+    width: 340px; /*assume karli */
+    border-radius: 1rem; /*16px coz boxes spotify ke side baar ke roud se hai */
+    margin-right: 0.5rem;
+}
+.mainc{
+    background-color: #121212;
+    flex: 1; /*after sidebar aaya which means side baar jitni bhi jagh lera hai uske baadh ki8 aari weight mujhe dedo jo hyum dekh sakte hai ki spotify website mainb main content side bar ke alawa wali space le raha hai */
+    border-radius: 1rem; /* coz boxes main ke round se hai */
+    overflow: auto; /*auto means scroll bar jab need hoga tab dikhai dega */
+
+}
+.music{
+    background-color: black;
+    position: fixed; /* because scroll karke bhi fotter humnara fixed hai */
+    bottom: 0; /* because we want bottom per jaake fixed hojae */
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none; /*underline hatjaae */
+    color: white;
+}
+.nav{
+    margin-top: 0.7rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    background-color:#121212; 
+    border-radius: 1rem;
+    display: flex; /* best way to edit 2 divs  together*/
+    flex-direction: column;/*upper niche mai edit ho */
+    justify-content: center;/* direct ke acoording liye esmai vertical hai to space distriburte hojae means upper neeche se bich mai aaje toh justrify:center */
+    height: 100px; /* height padding sab spotify ki original website per inspect karke pata chgka rem mai convert kara to make it more responsive */
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+
+}
+.nav1{
+    line-height: 2.5rem; /* home and search ke bich mai space karne ke liye vertically */
+    opacity: 0.7; /* we want hover karne pe bright ho jae opacity is the best way */
+    padding-left: 0.5rem; /* ese khudese thora thik place pe kara position zada kuch ni */
+    padding-top: 0.5rem;
+    padding-bottom: 1rem; 
+}
+.nav1:hover{
+    opacity: 1;
+}
+.nav1 i{
+    font-size: 2rem; /* again inspect se home and search ke icon ka length dekha aur copy kardiya */
+}
+.nav a{
+    font-size: 1rem;
+    margin-left: 1rem; /* icon se thora sa space hojae */
+}
+.library{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    margin-top: 0.7rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%; /* side bar ke respect mai child ko 100% milri hai  and nav jitna liya uske baadh ki bachi hui heght per kam karega which is important to note */
+}
+.library1{
+    display: flex; /* jin do chizo ko same line mai karna hota hai uske bar wale tag ko display:flex dedete hai */
+    justify-content: space-between; /* dono div ke bich mai saara extra space aajaega */
+    align-items: center; /* direct ke opposite sab ek line mai aajaenge kiye hgere direction is row so verticaly sab element same line per aajenge */
+}
+
+.l1 img{
+    opacity: 0.7;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.l1 a{
+    opacity: 0.7;
+    margin-left: 1rem;
+}
+.l1 img:hover{
+    opacity: 1;
+}
+.l1 a:hover{
+    opacity: 1;
+}
+.l2{
+    font-size: 1.25rem;
+}
+.l2 i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.l2 i:hover{
+    opacity: 1;
+}
+.l2 img{
+    opacity: 0.7;
+}
+.l2 img:hover{
+    opacity: 1;
+}
+.library2{
+    margin-top: 1rem;
+}
+.box{
+    background-color: #232323;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    height: 8rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+.box1{
+    font-size: 1rem; /*text big small hota hai */
+       font-weight: 500; /*text bolder and lighter hota hai */
+       margin-top: 0.5rem;
+
+    
+}
+.box2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+    margin-top: 1rem;
+
+}
+.button{
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    border: none; /*by default buttom ko boder milta hai */
+    padding-left: 1rem; /* button mai padding se size increse hojata hai */
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    width: fit-content;
+    opacity: 0.7;
+}
+.button:hover{
+    opacity: 1;
+}
+.BOX{
+    background-color: #232323;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    height: 8rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+.box3{
+    font-size: 1rem; /*text big small hota hai */
+    font-weight: 500; /*text bolder and lighter hota hai */
+    margin-top: 0.5rem;
+}
+.box4{
+    font-size: 0.75rem;
+    opacity: 0.9;
+    margin-top: 1rem;
+
+}
+/*done with side bar now main content */
+.sticky{
+    position: sticky;
+    top: 0; /*very important to do verna kam ni kara */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    z-index: 10; /* so that text of the card do'nt overlap the nav bar */
+}
+.navicon{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.navrest{
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.button1{
+    background-color: black;
+    color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: fit-content;
+    opacity: 0.7;
+    font-weight: 700;
+}
+.button1:hover{
+    opacity: 1;
+}
+@media (max-width:1000px){
+    .hide{
+        display: none; /*gayab hojaega 1000px tak uske baadh dikh jaega */
+    }
+}
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap; /* if more than space aajae toh mast next line mai chale jaae */
+    margin-top: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+}
+.card{
+
+    background-color: #232323;
+    width: 150px;
+    border-radius: 1rem;
+    opacity: 0.7;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+.cardimage{
+    width: 100%; /*verna cut hori thi image */
+    margin-bottom: 1rem;
+}
+.card:hover{
+    opacity: 1;
+}
+.title{
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+.information{
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+.line{
+    height: 20rem;
+}
+.nothr{
+    width: 70%; /* we want to set the weight with respect to the parent div tabhi line puri cover nahi karegi */
+    border-top: 1px solid;
+    margin-left: 15%;
+    margin-top: 7rem;
+    opacity: 0.5;
+}
+.music{
+    display: flex;
+}
+.music1{
+    width: 25%;
+}
+.music2{
+    width: 50%;
+   
+}
+.music3{
+    width: 25%;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lower{
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    opacity: 0.7;
+    height: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.input:hover{
+    opacity: 1;
+}
+.yo{
+    height: 1rem;
+}
+.yo:hover{
+    height: 1.2rem;
+}
+.yoyo{
+    background-color: transparent;
+    cursor: pointer; /* hande wala symbol aajaega */
+    width: 70%;
+    appearance: none; /* work only on track */
+}
+.yoyo::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.5rem;
+}
+.yoyo::-webkit-slider-thumb{
+    appearance: none;
+    position: relative;
+    z-index: 1;
+    background-color: #1bd706;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+
+}
